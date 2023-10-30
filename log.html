@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./code.jquery.com_jquery-3.7.1.min.js"></script>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content:space-between;
+            padding: 50px;
+            gap: 50px;
+            background-color: rgb(21, 84, 86);
+        }
+        #form1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #form{
+            width: 500px;
+            height: auto;
+            padding: 20px;
+            color: white;
+            background-color: chocolate;
+            background-position: center;
+            background-size: cover;
+            background-position-y:-60px ;
+            background-position-x:796px ;
+            border-radius: 15px;
+
+        }
+
+        #form2{
+            width: 500px;
+            height: auto;
+            padding: 20px;
+            color: white;
+            background-color: chocolate;
+            background-position: center;
+            background-size: cover;
+            background-position-y:-60px ;
+            background-position-x:796px ;
+            border-radius: 15px;
+
+        }
+
+        label{
+        display: block;
+        margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="date"] {
+            width: 50%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn-group {
+            align-items: center;
+        }
+        .btn5{
+            background-color: cadetblue;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .result-container{
+            width: 460px;
+            padding-top: 40px;
+            background-color: rgb(0, 0, 0,0.5);
+            padding: 20px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            justify-content: space-between;
+
+        }
+        .result {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        #display {
+            width: 500px;
+            height: 750px;
+            background: url();
+            background-size: cover;
+            border-radius: 10px;
+        }
+        #lable{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+        }
+        #logo{
+            display: flex;
+            justify-content: center;
+        }
+        #logo1 {
+            margin-top: -30px;
+            width: 100px;
+            height: auto;
+        }
+        textarea {
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px;
+        }
+        input{
+            padding-left: 10px;
+        }
+        #logo3 {
+            margin-top: -0px;
+            width: 120px;
+            height: auto;
+
+        }
+        #logo2 {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            
+        }
+        #lable2{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+        #label{
+            color: black;
+            font-weight: 400px;
+        }
+
+        #btns button{
+          width: 80px;
+          height: 30px;
+          background-color: rgb(6, 107, 102);
+          border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="form1">
+        <div id="form">
+            <div id="logo"><h1>login form of Coffeeee shop</h1></div>
+            <div id="label">
+                <div>
+                    <label for="fn">first name</label>
+                    <input type="text" name="fn" id="fn" class="fn" placeholder="Enter your first name">
+                </div>
+                <div>
+                    <label for="ln">last name</label>
+                    <input type="text" name="ln" id="ln" class="ln" placeholder="Enter your last name">
+                </div>
+                <div>
+                    <label for="em">Email</label>
+                    <input type="text" name="em" id="em" class="em" placeholder="Enter your Email">
+                </div>
+                <div>
+                    <label for="id">Enter your id</label>
+                    <input type="text" name="id" id="id" class="id" placeholder="Enter your id">
+                </div>
+                <div>
+                    <label for="pn">phone no.</label>
+                    <input type="text" name="pn" id="pn" class="pn" placeholder="Enter your phone no.">
+                </div>
+                <label for="">Gender</label>
+                <div id="lable2">
+                    <div style="display: flex; text-align: center;">
+                        <label for="male" style="color: #fff;;">Male</label>
+                        <input type="radio" name="Gender" id="male">
+                    </div>
+                    <div style="display: flex; text-align: center;">
+                        <label for="female" style="color: #fff;;">female</label>
+                        <input type="radio" name="Gender" id="female">
+                    </div>
+                    <div>
+                        <label for="date">Date of visiting</label>
+                        <input type="date" name="date" id="date" class="date" >
+                    </div>
+                    <div>
+                        <label for="textarea">customer History</label>
+                        <textarea id="textarea"  cols="60" rows="10" placeholder="Enter your History" style="width: 450px; height: 130px;"></textarea>
+                    </div>
+                    <div>
+                        <label for="pt">upload customers's picture</label>
+                        <input type="file" id="pt"><br>
+
+                    </div>
+                    <div id="btns">
+                        <button id="btn5" class="btn5">submit</button>
+                        <button id="btn4" class="btn5">clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="form2">
+        <ol id="ppt">
+           
+        </ol>
+    
+    </div>
+     <!-- <ul>
+    <div id="display">
+        <div id="logo2"> <img src="./1.jfif" alt="" id="logo3"></div>
+        <div id="result-container-wrapper" ></div>
+    </div>
+    </ul>  -->
+    <script>
+        $(document).ready(function(){
+            $('#btn5').click(function(){
+                var a = $('#fn').val();
+                var b = $('#ln').val();
+                var c = $('#em').val();
+                var d = $('#date').val();
+                var e = $('#textarea').val();
+                var f = $('#male').val();
+                var g = $('#female').val();
+                var h = $('#pt').val();
+
+                var i = $('<li></li>');
+                i.html(a+"<br>"+b+"<br>"+c+"<br>"+d+"<br>"+e+"<br>"+f+"<br>"+g+"<br>"+h);
+
+                $('#ppt').append(i);
+                $('#fn #ln #date #textarea #male #female #pt').val('');
+
+            })
+        })
+        // $(document).ready(function(){
+        //     $('btn4').click(function(){
+        //       $('#form2').empty();  
+        //     })
+        // })
+    </script>
+</body>
+</html>
+
